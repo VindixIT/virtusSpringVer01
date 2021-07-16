@@ -29,7 +29,7 @@ public class PilarController {
     @RequestMapping(value = "/pilar")
     //All users list
 	@GetMapping("/pilar")
-	public List<Pilar> getPilars(){
+	public List<Pilar> getPilares(){
     	List<Pilar> pilarvar = pilarRepository.findAll();
     	return pilarvar;
 	  	

@@ -10,11 +10,14 @@ import lombok.Data;
 @Entity(name="TipoNota")
 @Data
 @Table(name = "tipos_notas")
-@SequenceGenerator(allocationSize = 1, initialValue = 1, name = "id_tipos_notas_seq", sequenceName = "id_tipos_notas_seq")
+@SequenceGenerator(allocationSize = 1,
+					initialValue = 1,
+					name = "id_tipos_notas_seq",
+					sequenceName = "id_tipos_notas_seq")
 public class TipoNota {
 
 	@Id
-	@Column(name = "id_tipos_notas")
+	@Column(name = "id_tipo_nota")
 	@GeneratedValue(strategy = GenerationType.IDENTITY, generator = "id_tipos_notas_seq")
 	private Long idTipoNota;
 

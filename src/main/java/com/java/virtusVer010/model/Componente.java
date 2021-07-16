@@ -37,14 +37,14 @@ public class Componente {
 	@Column(name = "referencia", nullable = false, length = 500)
 	private String referencia;
 	
-	@Column(name = "autor_id")
-	private Long autorId;
+	@Column(name = "id_autor")
+	private Long idAutor;
 	
 	@Column(name = "criado_em")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date criadoEm;
 	
-	@Column(name = "status_id")
-	private Long statusId;
+	@Column(name = "id_Status")
+	private Long idStatus;
 	
 }
